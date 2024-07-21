@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 import pickle
-st.image(r"C:\Users\Y SAI KUMAR\Music\innomatics-footer-logo.webp")
+st.image(r"innomatics-footer-logo.webp")
 # Load the trained model
-with open(r"C:\Users\Y SAI KUMAR\New folder\weather.pkl", 'rb') as file:
+with open(r"weather.pkl", 'rb') as file:
     model = pickle.load(file)
 # Define the input fields
 st.title('Weather Prediction')
@@ -45,10 +45,10 @@ if st.button('Predict Weather Type'):
     if True:
 
         if prediction[0]=='Rainy':
-            st.image(r"C:\Users\Y SAI KUMAR\Music\Rainyweather.png")
+            st.image(r"Rainyweather.png")
         elif prediction[0]=='Cloudy':
-            st.image(r"C:\Users\Y SAI KUMAR\Music\Cloudyweather.png")
+            st.image(r"Cloudyweather.png")
         elif prediction[0]=='Sunny':
-            st.image(r"C:\Users\Y SAI KUMAR\Music\Sunnyweather.png")
+            st.image(r"Sunnyweather.png")
         else:
-            st.image(r"C:\Users\Y SAI KUMAR\Music\Snowyimg.png")
+            st.image(r"Snowyimg.png")
